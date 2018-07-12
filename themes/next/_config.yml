@@ -860,7 +860,7 @@ canvas_ribbon:
 #    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
 # Be aware that you should use the same version as internal ones to avoid potential problems.
 # Please use the https protocol of CDN files when you enable https on your site.
-vendors: 
+vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
