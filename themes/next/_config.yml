@@ -9,7 +9,7 @@
 override: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
-cache:
+cache: 
   enable: true
 
 # Redefine custom file paths. Introduced in NexT v6.0.2.
@@ -44,7 +44,7 @@ cache:
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
-favicon:
+favicon: 
   small: /images/avatar.jpg
   medium: /images/avatar.jpg
   apple_touch_icon: /images/avatar.jpg
@@ -68,9 +68,9 @@ footer:
     # `heart` is recommended with animation in red (#ff0000).
     name: heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#FF6666"
 
   # If not defined, will be used `author` from Hexo main config.
   copyright: 
@@ -116,7 +116,7 @@ index_with_subtitle: false
 # Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
-menu:
+menu: 
   home: / || home
   archives: /archives/ || archive
   tags: /tags/ || tags
