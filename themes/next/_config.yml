@@ -187,6 +187,7 @@ links_title: Links
 # links_layout: block
 links_layout: inline
 links: 
+  写博客: https://github.com/jlice/blog/new/master/source/_posts
   我的wiki: https://wiki.jlice.top/
   兰芷馥郁: https://www.shanbay.com/team/detail/34543/
   实验楼: https://www.shiyanlou.com/user/191123/
