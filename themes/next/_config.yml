@@ -154,7 +154,7 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-social:
+social: 
   GitHub: https://github.com/jlice || github
   E-Mail: mailto:1121672253@qq.com || envelope
   #Google: https://plus.google.com/yourname || google
@@ -184,10 +184,14 @@ social_icons:
 # Blog rolls
 links_icon: link
 links_title: Links
-links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+# links_layout: block
+links_layout: inline
+links: 
+  我的wiki: https://wiki.jlice.top/
+  兰芷馥郁: https://www.shanbay.com/team/detail/34543/
+  实验楼: https://www.shiyanlou.com/user/191123/
+  LeetCode: https://leetcode.com/jlice/
+  牛客网: https://www.nowcoder.com/profile/2036655
 
 # Sidebar Avatar
 avatar: 
@@ -309,8 +313,8 @@ codeblock:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-#reward_comment: Donate comment here
-#wechatpay: /images/wechatpay.jpg
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /images/wechatpay.jpg
 #alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
@@ -329,8 +333,8 @@ related_posts:
 
 # Declare license on posts
 post_copyright: 
-  enable: false
-  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
+  enable: true
+  license: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="external nofollow" target="_blank">署名-非商业性使用-禁止演绎 4.0 国际</a>
 
 # Post edit
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
@@ -589,7 +593,7 @@ needmoreshare2:
 #yandex_site_verification:
 
 # CNZZ count
-#cnzz_siteid:
+cnzz_siteid: 1274168993
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
@@ -658,11 +662,11 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count: 
   enable: true
-  total_visitors: false
+  total_visitors: true
   total_visitors_icon: user
-  total_views: false
+  total_views: true
   total_views_icon: eye
-  post_views: false
+  post_views: true
   post_views_icon: eye
 
 
@@ -738,13 +742,13 @@ bookmark:
 exturl: false
 
 # Note tag (bs-callout).
-note:
+note: 
   # Note tag style values:
   #  - simple    bs-callout old alert style. Default.
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
+  style: modern
   icons: false
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
@@ -848,7 +852,7 @@ canvas_sphere: false
 # size: The width of the ribbon.
 # alpha: The transparency of the ribbon.
 # zIndex: The display level of the ribbon.
-canvas_ribbon:
+canvas_ribbon: 
   enable: false
   size: 300
   alpha: 0.6
@@ -890,7 +894,7 @@ vendors:
 
   # Internal version: 0.7.9
   # See: https://faisalman.github.io/ua-parser-js/
-  ua_parser:
+  ua_parser: https://cdn.jsdelivr.net/ua-parser.js/0.7.9/ua-parser.min.js
 
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
