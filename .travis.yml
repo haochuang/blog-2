@@ -1,0 +1,18 @@
+language: node_js
+node_js: 10.3.0
+install: 
+  - npm install
+script: 
+  - npm uninstall hexo-renderer-marked --save
+  - git reset --hard
+  - hexo clean
+  - hexo g
+after_success:  |
+  cd "$TRAVIS_BUILD_DIR"
+  cd public
+  find . -name "*.html" | xargs sed -i '/^\s*$/d'
+  git init
+  git add .
+  git -c user.name=$USERNAME -c user.email=$EMAIL commit -m "Auto Deployment"
+  git push -f -q https://$GITHUB_USER:$GITHUB_TOKEN@$GITHUB_REPO master:master
+  cd "$TRAVIS_BUILD_DIR"
